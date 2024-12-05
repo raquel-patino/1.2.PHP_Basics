@@ -1,17 +1,15 @@
 <?php
 declare(strict_types = 1);
+$contador=2;
+$numero=15;
+contadorNumero (2);
 
-contadorNumero(15,2);
+function contadorNumero ($contador, int $num = 10) : void  {
+$i=0;
 
-function contadorNumero( int $numero, int $contador) {
-$vuelta=1;
-    while ($i < $numero && $i+$contador <=$numero){
-        if ($numero!=15) {
-            $numero=10;
-        }
-        echo "Esta es la vuelta $vuelta = " . ($i+= $contador). "<br>"; 
-        $vuelta++;
+    while (($i + $contador) <= $num) {
+        $i = $i + $contador;
+        echo $i;
     }
 }
-
 ?>

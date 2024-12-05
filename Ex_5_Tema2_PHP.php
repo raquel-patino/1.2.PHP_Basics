@@ -5,11 +5,11 @@ echo gradoEstudiante (40);
 
 function gradoEstudiante (int $grado) : string{
 
-    if ($grado== 60){
-$resultado= "Primera Divisió";
-    }else if(($grado>=45) && ($grado<=59)) {
+    if ($grado == 60){
+$resultado = "Primera Divisió";
+    }else if($grado >= 45) {
 $resultado= "Segona Divisió";
-    }else if(($grado>=33) && ($grado<=44)){
+    }else if($grado >= 33){
 $resultado= "Tercera Divisió";
     }else {
 $resultado="Estudiante suspenso";
